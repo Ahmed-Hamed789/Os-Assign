@@ -1,0 +1,17 @@
+Exercise 1: Using fork()
+The program uses the fork() system call to create a new process. The child process prints its PID, and the parent process prints its PID. This demonstrates how a process creates a copy of itself.
+
+Exercise 2: Background Processes
+The program creates a child process that runs in the background while the parent continues execution. The parent uses waitpid() with the WNOHANG option to check on the child without stopping its own work.
+
+Exercise 3: Stopping Processes
+The program creates a child process and then stops it using the kill() function with the SIGTERM signal. This shows how to terminate a process programmatically.
+
+Exercise 4: Pausing and Resuming
+The program pauses a child process using the SIGSTOP signal and later resumes it using the SIGCONT signal. This demonstrates controlling the execution state of a process.
+
+Job of the Linker
+The Linker combines compiled object files into a single executable program. It resolves references to functions and variables across different files.
+
+Job of the Loader
+The Loader loads the executable program from the disk into memory so it can run. It also loads any necessary shared libraries.
